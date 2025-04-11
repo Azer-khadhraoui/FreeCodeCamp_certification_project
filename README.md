@@ -28,7 +28,7 @@ Mettre en pratique les compétences acquises à travers des **projets concrets**
 
 
 ---
-https://Azer-khadhraoui.github.io/FreeCodeCamp_certification_project/Palindrome%20Checker/
+https://Azer-khadhraoui.github.io/FreeCodeCamp_certification_project/RPG%20Creature%20Search%20App/
 
 ⭐️ N'hésite pas à laisser un ⭐ si tu trouves ce dépôt utile ou inspirant !
 
