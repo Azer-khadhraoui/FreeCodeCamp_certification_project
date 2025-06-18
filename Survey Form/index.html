@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">We appreciate your feedback to help us improve!</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email address" />
+
+      <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" name="age" min="18" max="99" placeholder="Enter your age" />
+
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" name="referral">
+        <option value="friend">Friend</option>
+        <option value="internet">Internet</option>
+        <option value="advertisement">Advertisement</option>
+      </select>
+
+      <fieldset>
+        <legend>Your experience with us:</legend>
+        <label><input type="radio" name="experience" value="excellent" /> Excellent</label>
+        <label><input type="radio" name="experience" value="good" /> Good</label>
+        <label><input type="radio" name="experience" value="bad" /> Bad</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What features do you use? (Check all that apply):</legend>
+        <label><input type="checkbox" name="features" value="service" /> Customer Service</label>
+        <label><input type="checkbox" name="features" value="product" /> Product Quality</label>
+        <label><input type="checkbox" name="features" value="support" /> Support</label>
+      </fieldset>
+
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Write here..."></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
