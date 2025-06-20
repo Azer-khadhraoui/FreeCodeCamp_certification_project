@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#Arrays">Arrays</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile, high-level programming language used for web development.</p>
+      <p>It enables dynamic content, interactive user interfaces, and backend services.</p>
+      <code>console.log("Hello World");</code>
+      <p>It can be embedded directly into HTML or run on servers using Node.js.</p>
+      <ul>
+        <li>Client-side scripting</li>
+        <li>Lightweight syntax</li>
+        <li>First-class functions</li>
+      </ul>
+      <p>JavaScript is supported by all modern web browsers.</p>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are containers for storing data values.</p>
+      <p>You can declare variables using `var`, `let`, or `const`.</p>
+      <code>let name = "Alice";</code>
+      <p>`let` and `const` are block-scoped and recommended for modern code.</p>
+      <ul>
+        <li>`var` has function scope</li>
+        <li>`let` has block scope</li>
+        <li>`const` is immutable</li>
+      </ul>
+      <p>Use `const` when the value should not change.</p>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions allow you to group code into reusable blocks.</p>
+      <p>You can define a function using the `function` keyword or arrow syntax.</p>
+      <code>function greet(name) { return "Hello " + name; }</code>
+      <p>Arrow functions are shorter and often more concise.</p>
+      <code>const greet = name => `Hello ${name}`;</code>
+      <ul>
+        <li>Reusable</li>
+        <li>Scalable</li>
+        <li>Maintainable</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops allow you to execute code repeatedly.</p>
+      <p>Common types: `for`, `while`, and `forEach` (for arrays).</p>
+      <code>for (let i = 0; i < 5; i++) { console.log(i); }</code>
+      <p>Loops are essential for iterating over data.</p>
+      <ul>
+        <li>for loops</li>
+        <li>while loops</li>
+        <li>for...of</li>
+      </ul>
+      <p>Always make sure to avoid infinite loops!</p>
+    </section>
+
+    <section class="main-section" id="Arrays">
+      <header>Arrays</header>
+      <p>Arrays are used to store multiple values in a single variable.</p>
+      <p>JavaScript arrays are dynamic and zero-indexed.</p>
+      <code>let fruits = ["Apple", "Banana", "Cherry"];</code>
+      <p>You can use methods like `push`, `map`, and `filter`.</p>
+      <ul>
+        <li>Array.push()</li>
+        <li>Array.map()</li>
+        <li>Array.length</li>
+      </ul>
+      <code>fruits.map(fruit => fruit.toUpperCase());</code>
+    </section>
+  </main>
+</body>
+</html>
