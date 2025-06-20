@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartWatch Pro - Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="SmartWatch Logo">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#how-it-works">How It Works</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>SmartWatch Pro</h1>
+    <p>The future of time on your wrist</p>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <input id="email" type="email" name="email" placeholder="Enter your email" required>
+      <input id="submit" type="submit" value="Get Started">
+    </form>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="feature-container">
+      <div class="feature">
+        <h3>24/7 Heart Monitoring</h3>
+        <p>Track your heart rate with precision sensors built-in.</p>
+      </div>
+      <div class="feature">
+        <h3>GPS & Maps</h3>
+        <p>Navigate with real-time GPS tracking and smart routes.</p>
+      </div>
+      <div class="feature">
+        <h3>Water Resistant</h3>
+        <p>Swim, shower, and survive the rain with ease.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="video-container">
+      <iframe
+        id="video"
+        src="https://www.youtube.com/embed/TNhaISOUy6Q"
+        title="Product Demo"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-container">
+      <div class="price-box">
+        <h3>Basic</h3>
+        <p>$199</p>
+        <ul>
+          <li>Time + Date</li>
+          <li>Step Counter</li>
+          <li>1 Year Warranty</li>
+        </ul>
+      </div>
+      <div class="price-box">
+        <h3>Pro</h3>
+        <p>$299</p>
+        <ul>
+          <li>All Basic Features</li>
+          <li>Heart Monitoring</li>
+          <li>GPS Navigation</li>
+        </ul>
+      </div>
+      <div class="price-box">
+        <h3>Elite</h3>
+        <p>$399</p>
+        <ul>
+          <li>All Pro Features</li>
+          <li>Advanced Analytics</li>
+          <li>Priority Support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

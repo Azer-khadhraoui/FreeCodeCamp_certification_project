@@ -1,0 +1,169 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header and Navbar */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e272e;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#header-img {
+  height: 40px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+#hero {
+  margin-top: 80px;
+  padding: 60px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#form {
+  margin-top: 20px;
+}
+
+#email {
+  padding: 10px;
+  width: 250px;
+  max-width: 90%;
+  margin-right: 10px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #74b9ff;
+}
+
+/* Features */
+#features {
+  padding: 60px 20px;
+  background: #f1f2f6;
+}
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Video Section */
+#how-it-works {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#video {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 60px 20px;
+  background: #dfe6e9;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.price-box {
+  background: white;
+  padding: 20px;
+  flex: 1 1 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.price-box ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.price-box li {
+  margin-bottom: 8px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature-container, .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+}
